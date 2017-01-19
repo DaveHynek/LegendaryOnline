@@ -1,0 +1,15 @@
+# Python
+[Ee]nv/
+__pycache__
+
+# Kubernetes
+.kube/
+
+# Database
+*.sqlite3
+
+# Prod Settings
+*/settings/gcloud.py
+
+# Django
+/static
