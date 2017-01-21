@@ -25,4 +25,4 @@ class HeroCard(models.Model):
     quantity = models.PositiveSmallIntegerField()
     card_file_name = models.CharField(max_length=20)
     hero = models.ForeignKey(Hero)
-    hero_class = models.ManyToManyField(HeroClass)
+    hero_class = models.ManyToManyField(HeroClass, db_table='cards_herocard_heroclass')
