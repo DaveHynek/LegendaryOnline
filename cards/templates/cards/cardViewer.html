@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Viewer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cards/css/cardViewer.css' %}" />
+</head>
+<body>
+    {% if heroes %}
+    <div class="card-view-container">
+        {% for hero in heroes %}
+            <div>
+                {{hero.name}} {%if hero.hero_team %} - {{hero.hero_team.team_name}} {% endif %}
+                {% if hero.herocard_set.all %}
+                    {% for card in hero.herocard_set.all %}
+                        <div class="card-container">
+                            <img src="{% static card.get_card_image_path %}" />
+                            <div class="card-detail-container">
+                                {{card.major_text}} <br/>
+                                Hero Class - {{card.get_hero_classes}}<br/>
+                                Base Recruit - {{card.base_recruit}} <br/>
+                                Base Attack - {{card.base_attack}} <br/>
+                                Cost - {{card.cost}} <br/>
+                                Quantity - {{card.quantity}} <br/>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    Hero contains no cards.
+                {% endif %}
+            </div>
+
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>No card data is available</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+.card-view-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-detail-container{
+    display: flex;
+    flex-direction: row;
+}

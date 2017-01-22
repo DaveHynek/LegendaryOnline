@@ -144,7 +144,7 @@ def create_hero_card_seed_data(apps, schema_editor):
         HeroCard(major_text="Mission Accomplished", cost=2, base_recruit=0, base_attack=0, quantity=5, card_file_name="ma.jpg", hero=widow),
         HeroCard(major_text="Dangerous Rescue", cost=3, base_recruit=0, base_attack=2, quantity=5, card_file_name="dr.jpg", hero=widow),
         HeroCard(major_text="Covert Operation", cost=4, base_recruit=0, base_attack=0, quantity=3, card_file_name="co.jpg", hero=widow),
-        HeroCard(major_text="Silent Sniper", cost=7, base_recruit=0, base_attack=4, quantity=1, card_file_name="ds.jpg", hero=widow),
+        HeroCard(major_text="Silent Sniper", cost=7, base_recruit=0, base_attack=4, quantity=1, card_file_name="ss.jpg", hero=widow),
         #Captain America
         HeroCard(major_text="Avengers Assemble!", cost=3, base_recruit=0, base_attack=0, quantity=5, card_file_name="aa.jpg", hero=captain),
         HeroCard(major_text="Perfect Teamwork", cost=4, base_recruit=0, base_attack=0, quantity=5, card_file_name="pt.jpg", hero=captain),
@@ -159,7 +159,7 @@ def create_hero_card_seed_data(apps, schema_editor):
         HeroCard(major_text="Here, Hold This For A Second", cost=3, base_recruit=2, base_attack=0, quantity=5, card_file_name="hhtfas.jpg", hero=deadpool),
         HeroCard(major_text="Oddball", cost=5, base_recruit=0, base_attack=2, quantity=5, card_file_name="ob.jpg", hero=deadpool),
         HeroCard(major_text="Hey, Can I Get A Do-Over", cost=3, base_recruit=0, base_attack=2, quantity=3, card_file_name="hcigado.jpg", hero=deadpool),
-        HeroCard(major_text="Random Acts of Unkindness", cost=7, base_recruit=0, base_attack=6, quantity=1, card_file_name="raof.jpg", hero=deadpool),
+        HeroCard(major_text="Random Acts of Unkindness", cost=7, base_recruit=0, base_attack=6, quantity=1, card_file_name="raou.jpg", hero=deadpool),
         #Emma Frost
         HeroCard(major_text="Mental Discipline", cost=3, base_recruit=1, base_attack=0, quantity=5, card_file_name="md.jpg", hero=frost),
         HeroCard(major_text="Shadowed Thoughts", cost=4, base_recruit=0, base_attack=2, quantity=5, card_file_name="st.jpg", hero=frost),

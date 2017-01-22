@@ -13,3 +13,5 @@ DATABASES = {
     }
 }
 # [END dbconfig]
+
+STATIC_URL = '/static/'

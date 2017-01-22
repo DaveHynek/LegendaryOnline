@@ -13,7 +13,15 @@
 # limitations under the License.
 
 from django.http import HttpResponse
+from django.template import loader
+from .models import Hero
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the cards index.")
+    template = loader.get_template('cards/cardViewer.html')
+    test = Hero.objects.get(id=1)
+
+    context = {
+        'heroes': Hero.objects.filter(card_set__name='Core').order_by('id')
+    }
+    return HttpResponse(template.render(context, request))
