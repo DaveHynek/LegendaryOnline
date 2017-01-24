@@ -36,4 +36,4 @@ class HeroCard(models.Model):
         return hero_class_text[:-2]
 
     def get_card_image_path(self):
-        return os.path.join("cards", self.hero.card_set.name, self.hero.static_folder, self.card_file_name)
+        return os.path.join("cards", self.hero.card_set.name.lower(), self.hero.static_folder, self.card_file_name)
