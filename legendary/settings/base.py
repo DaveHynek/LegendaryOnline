@@ -28,6 +28,9 @@ ALLOWED_HOSTS = ['localhost', '.legendary-online.com']
 # Application definition
 
 INSTALLED_APPS = (
+    'home',
+    'game',
+    'users',
     'cards',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -67,6 +70,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'legendary.wsgi.application'
+
+# Authentication
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

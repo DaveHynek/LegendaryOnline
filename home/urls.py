@@ -12,20 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from django.conf import settings
-from django.conf.urls import include, url
-from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import url
+
+from . import views
 
 urlpatterns = [
-    url(r'^', include('home.urls')),
-    url(r'^', include('users.urls')),
-    url(r'^game/', include('game.urls')),
-    url(r'^cards/', include('cards.urls')),
-    url(r'^admin/', admin.site.urls)
+    url(r'^$', views.home, name='home')
 ]
-
-# Only serve static files from Django during development
-# Use Google Cloud Storage or an alternative CDN for production
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns()
