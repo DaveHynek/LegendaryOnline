@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Legendary Online</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/std.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/users.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 </head>
 
 <body>
-    <div id="content">
-        {% block content %}{% endblock %}
+    <div class="login-container">
+        <div class="login-banner">
+            Legendary Online
+        </div>
+        <br/>
+        <div id="content" class="form-container">
+            {% block content %}{% endblock %}
+        </div>
     </div>
 </body>
 </html>

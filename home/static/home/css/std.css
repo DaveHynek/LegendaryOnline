@@ -1,0 +1,9 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: lightslategray;
+    font-family: 'Exo 2', sans-serif;
+}
