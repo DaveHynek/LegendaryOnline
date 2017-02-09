@@ -21,13 +21,21 @@
     font-size: 20px;
     padding: 5px;
     margin: 0 auto;
-    width: 300px;
+    min-width: 300px;
+}
+
+.login-container .form-container .field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3px;
 }
 
 .login-container .form-container .error-label {
     color: red;
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
     text-align: center;
     width: 300px;
 }
