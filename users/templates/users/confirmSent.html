@@ -1,0 +1,13 @@
+{% extends "users\base.html" %}
+{% block content %}
+
+<div class="confirm-sent-text">
+    Thank you for registering.  A confirmation email has been sent to the email address you provided.
+    Please confirm your email before logging in.
+</div>
+<br />
+<div class="confirm-sent-text">
+    <a href="{% url 'login' %}">Return to Login</a>
+</div>
+
+{% endblock %}

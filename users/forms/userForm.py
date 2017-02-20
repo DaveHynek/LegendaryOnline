@@ -7,7 +7,8 @@ class UserForm(ModelForm):
     first_name = forms.CharField(max_length=100, required=True)
     last_name = forms.CharField(max_length=100, required=True)
     email = forms.EmailField(required=True)
-    confirm_password = forms.CharField(max_length=100, required=True)
+    password = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput)
+    confirm_password = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput)
 
     def clean(self):
         cleaned_data = super(UserForm, self).clean()

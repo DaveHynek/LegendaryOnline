@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     url(r'^login/$', auth_views.login, {'template_name': 'users\login.html'}, name='login'),
     url(r'^password_reset/$', auth_views.password_reset, {'template_name': 'users\password_reset.html'}, name='password_reset'),
-    url(r'^register/$', views.register, name='register')
+    url(r'^register/$', views.register, name='register'),
+    url(r'^register/sent/$', views.sent, name='sent'),
 ]
